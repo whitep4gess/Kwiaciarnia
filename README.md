@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 1.8 seconds
-Output:
 # Prześwit — strona kwiaciarni
 
 Autorski, responsywny landing page fikcyjnej pracowni florystycznej „Prześwit”. Projekt działa bez instalowania zależności — wystarczy otworzyć `index.html` w przeglądarce.
@@ -20,4 +17,3 @@ Autorski, responsywny landing page fikcyjnej pracowni florystycznej „Prześwit
 Otwórz `index.html` bezpośrednio albo uruchom dowolny lokalny serwer HTTP w tym katalogu.
 
 > Nazwa marki, numer telefonu, ceny i opinie są demonstracyjne. Zamówienia z formularza są wysyłane przez FormSubmit na `whitep4gess@gmail.com`. Pierwsze użycie wywoła wiadomość aktywacyjną — należy kliknąć zawarty w niej link, aby potwierdzić adres odbiorcy.
-
