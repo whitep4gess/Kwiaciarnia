@@ -8,7 +8,7 @@ Autorski, responsywny landing page fikcyjnej pracowni florystycznej „Prześwit
 - kolekcję z filtrowaniem bukietów,
 - interaktywny dobór bukietu,
 - slider opinii,
-- modal zamówienia z walidacją, wysyłką e-mail i ekranem potwierdzenia,
+- bezpośrednie odnośniki e-mail do składania zamówień,
 - autorskie fotografie wygenerowane na potrzeby projektu,
 - podstawową dostępność i obsługę `prefers-reduced-motion`.
 
@@ -16,4 +16,4 @@ Autorski, responsywny landing page fikcyjnej pracowni florystycznej „Prześwit
 
 Otwórz `index.html` bezpośrednio albo uruchom dowolny lokalny serwer HTTP w tym katalogu.
 
-> Nazwa marki, numer telefonu, ceny i opinie są demonstracyjne. Zamówienia z formularza są wysyłane przez FormSubmit na `whitep4gess@gmail.com`. Pierwsze użycie wywoła wiadomość aktywacyjną — należy kliknąć zawarty w niej link, aby potwierdzić adres odbiorcy.
+> Nazwa marki, numer telefonu, ceny i opinie są demonstracyjne. Strona nie posiada formularza i nie zbiera danych klientów. Przyciski zamówienia otwierają program pocztowy użytkownika z adresem `whitep4gess@gmail.com`.

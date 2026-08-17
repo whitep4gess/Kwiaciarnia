@@ -36,7 +36,7 @@
       <a href="#kontakt">Kontakt</a>
     </nav>
 
-    <button class="nav-order js-open-order" type="button">Zamów bukiet <span>↗</span></button>
+    <a class="nav-order" href="mailto:whitep4gess@gmail.com?subject=Zam%C3%B3wienie%20bukietu">Zamów bukiet <span>↗</span></a>
   </header>
 
   <main id="main">
@@ -47,7 +47,7 @@
         <p class="hero-lead">Układamy bukiety z sezonowych kwiatów — trochę dzikie, zawsze osobiste i nigdy spod linijki.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#kolekcja">Zobacz bukiety <span>→</span></a>
-          <button class="text-link js-open-order" type="button">Zamów po swojemu</button>
+          <a class="text-link" href="mailto:whitep4gess@gmail.com?subject=Bukiet%20na%20zam%C3%B3wienie">Zamów po swojemu</a>
         </div>
         <div class="hero-note">
           <span class="mini-bloom" aria-hidden="true">✺</span>
@@ -87,28 +87,28 @@
 
       <div class="product-grid">
         <article class="product-card" data-tags="subtle gift">
-          <button class="product-image js-order-product" type="button" data-product="Poranek">
+          <a class="product-image" href="mailto:whitep4gess@gmail.com?subject=Zam%C3%B3wienie%20bukietu%20Poranek">
             <img src="assets/bukiet-poranek.png" loading="lazy" alt="Delikatny bukiet Poranek w odcieniach pudrowego różu" width="1024" height="1536">
             <span class="card-arrow" aria-hidden="true">↗</span>
             <span class="badge">bestseller</span>
-          </button>
+          </a>
           <div class="product-meta"><div><h3>Poranek</h3><p>jaskry · róże · kosmos</p></div><strong>169 zł</strong></div>
         </article>
 
         <article class="product-card card-offset" data-tags="bold gift">
-          <button class="product-image js-order-product" type="button" data-product="Iskra">
+          <a class="product-image" href="mailto:whitep4gess@gmail.com?subject=Zam%C3%B3wienie%20bukietu%20Iskra">
             <img src="assets/bukiet-iskra.png" loading="lazy" alt="Kolorowy bukiet Iskra z tulipanów, jaskrów i anemonów" width="1024" height="1536">
             <span class="card-arrow" aria-hidden="true">↗</span>
             <span class="badge badge-blue">nowość</span>
-          </button>
+          </a>
           <div class="product-meta"><div><h3>Iskra</h3><p>tulipany · anemony · ostróżka</p></div><strong>189 zł</strong></div>
         </article>
 
         <article class="product-card" data-tags="bold">
-          <button class="product-image js-order-product" type="button" data-product="Słoneczna strona">
+          <a class="product-image" href="mailto:whitep4gess@gmail.com?subject=Zam%C3%B3wienie%20bukietu%20S%C5%82oneczna%20strona">
             <img class="product-landscape" src="assets/hero.png" loading="lazy" alt="Artystyczny bukiet Słoneczna strona w koralowych kolorach" width="1536" height="1024">
             <span class="card-arrow" aria-hidden="true">↗</span>
-          </button>
+          </a>
           <div class="product-meta"><div><h3>Słoneczna strona</h3><p>tulipany · jaskry · gałązki</p></div><strong>od 189 zł</strong></div>
         </article>
       </div>
@@ -120,7 +120,7 @@
         <h2 id="builder-title">Nie wiesz, co wybrać?</h2>
         <p>Wskaż klimat, a podpowiemy bukiet pasujący do chwili.</p>
       </div>
-      <form class="builder-form" id="bouquet-form">
+      <div class="builder-form" id="bouquet-form">
         <fieldset>
           <legend>01. Jaki nastrój?</legend>
           <div class="choice-row">
@@ -137,8 +137,8 @@
             <label><input type="radio" name="budget" value="250"><span>bez limitu</span></label>
           </div>
         </fieldset>
-        <button class="button button-cream" type="submit">Znajdź mój bukiet <span>→</span></button>
-      </form>
+        <button class="button button-cream" id="bouquet-submit" type="button">Znajdź mój bukiet <span>→</span></button>
+      </div>
       <div class="builder-result" id="builder-result" role="status" aria-live="polite" hidden></div>
     </section>
 
@@ -195,7 +195,7 @@
       <div class="contact-main">
         <p class="eyebrow eyebrow-light">Wpadnij albo napisz</p>
         <h2 id="contact-title">Spotkajmy się<br><em>przy kwiatach.</em></h2>
-        <button class="button button-cream js-open-order" type="button">Zamów bukiet <span>↗</span></button>
+        <a class="button button-cream" href="mailto:whitep4gess@gmail.com?subject=Zam%C3%B3wienie%20bukietu">Zamów bukiet <span>↗</span></a>
       </div>
       <div class="contact-details">
         <div><p>Pracownia</p><strong>Kraków · odbiór osobisty<br>i dostawa na terenie miasta</strong></div>
@@ -211,31 +211,6 @@
     <div><a href="#">Instagram</a><a href="#">Pinterest</a></div>
     <small>© <span id="year"></span> Prześwit</small>
   </footer>
-
-  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-title">
-    <button class="dialog-close" type="button" aria-label="Zamknij formularz">×</button>
-    <div class="dialog-header">
-      <p class="eyebrow">Bukiet na zamówienie</p>
-      <h2 id="order-title">Opowiedz nam<br><em>dla kogo.</em></h2>
-      <p>Oddzwonimy, potwierdzimy kwiaty i termin. Bez płatności na tym etapie.</p>
-    </div>
-    <form id="order-form" action="https://formsubmit.co/whitep4gess@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Nowe zamówienie kwiatów — Prześwit">
-      <input type="hidden" name="_template" value="table">
-      <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <label>Imię<input type="text" name="name" autocomplete="name" required placeholder="Jak masz na imię?"></label>
-      <label>Telefon<input type="tel" name="phone" autocomplete="tel" required placeholder="+48 000 000 000"></label>
-      <label>E-mail<input type="email" name="email" autocomplete="email" required placeholder="twoj@email.pl"></label>
-      <label>Wybrany bukiet<select name="product"><option>Bukiet-niespodzianka</option><option>Poranek</option><option>Iskra</option><option>Słoneczna strona</option></select></label>
-      <label>Kilka słów<textarea name="message" rows="3" placeholder="Kolory, okazja, termin dostawy…"></textarea></label>
-      <button class="button button-dark" type="submit">Wyślij zapytanie <span>→</span></button>
-      <p class="form-error" id="form-error" role="alert" hidden>Nie udało się wysłać zapytania. Sprawdź połączenie i spróbuj ponownie.</p>
-      <p class="form-note">Zapytanie zostanie wysłane do pracowni na adres whitep4gess@gmail.com.</p>
-    </form>
-    <div class="form-success" id="form-success" hidden>
-      <span>✿</span><h3>Dziękujemy!</h3><p>Zapytanie zostało wysłane do pracowni. Odezwiemy się, aby potwierdzić szczegóły.</p><button class="text-link dialog-done" type="button">Wróć na stronę</button>
-    </div>
-  </dialog>
 
   <script src="script.js"></script>
 </body>
