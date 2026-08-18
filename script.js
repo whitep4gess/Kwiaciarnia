@@ -1,6 +1,5 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
-const header = document.querySelector('.site-header');
 
 menuToggle.addEventListener('click', () => {
   const open = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -12,12 +11,6 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
   menuToggle.setAttribute('aria-expanded', 'false');
   nav.classList.remove('open');
 }));
-
-let headerOffset = header.offsetTop;
-window.addEventListener('resize', () => { if (!header.classList.contains('is-sticky')) headerOffset = header.offsetTop; });
-window.addEventListener('scroll', () => {
-  header.classList.toggle('is-sticky', window.scrollY > headerOffset + 150);
-});
 
 const filters = document.querySelectorAll('.filter');
 const products = document.querySelectorAll('.product-card');
